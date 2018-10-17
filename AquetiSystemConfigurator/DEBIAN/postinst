@@ -1,0 +1,15 @@
+#!/bin/bash
+#Set file descriptor limits to 64000 if not explicitly set.
+var=$(grep -rin "* hard nofile" /etc/security/limits.conf)
+if [ -z "$var" ]; then
+   echo "#Aqueti file descriptor limits" >> /etc/security/limits.conf
+   echo "* hard nofile 64000" >> /etc/security/limits.conf
+   echo "root hard nofile 64000" >> /etc/security/limits.conf
+   echo "* soft nofile 64000" >> /etc/security/limits.conf
+   echo "root soft nofile 64000" >> /etc/security/limits.conf
+fi
+
+#reboot the machine
+#Add option to not reboot.
+#Reboot after install
+reboot

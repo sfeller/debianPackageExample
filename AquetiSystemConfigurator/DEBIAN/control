@@ -1,0 +1,7 @@
+Package: AquetiSystemConfigurator
+Version: 0.2
+Maintainer: Aqueti, inc.
+Homepage: http://www.aqueti.com
+Architecture: amd64
+Depends: libc6 , vim , python-tk , python3-pip , libi2c-dev , python3-scipy , python3-matplotlib , python3-pyqt5 , libglfw3-dev , libcanberra-gtk-module , libpano13-3 , libexiv2-14 , libvigraimpex5v5 , libwxbase3.0-0v5 , libwxgtk3.0-0v5 , enblend , enfuse , libimage-exiftool-perl , libav-tools , ntp , openssh-server , ssh , nvidia-390 , libcuda1-390 , mongodb-org , apt-transport-https , ca-certificates , curl , software-properties-common , docker-ce , ffmpeg-3 , tesseract
+Description: Package for Aqueti System Configuration

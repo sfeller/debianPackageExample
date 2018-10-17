@@ -1,0 +1,4 @@
+Template AquetiSystemConfigurator/reboot_option
+Type: boolean
+Default: yes
+Description: You must reboot for changes to take effect. Do you want to reboot now?
